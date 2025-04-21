@@ -230,6 +230,22 @@ CREATE TABLE IF NOT EXISTS `cities` (
 -- --------------------------------------------------------
 
 --
+-- Dumping data for table `cities`
+--
+
+INSERT INTO `cities` (`id`, `country_code`, `name`, `latitude`, `longitude`) VALUES
+(931, 'ZA', 'Northern Cape', -29.0466808, 21.8568586),
+(932, 'ZA', 'Free State', 37.6858525, -97.2811256),
+(933, 'ZA', 'Limpopo', -23.4012946, 29.4179324),
+(934, 'ZA', 'North West', 32.758852, -97.328806),
+(935, 'ZA', 'KwaZulu-Natal', -28.5305539, 30.8958242),
+(936, 'ZA', 'Gauteng', -26.2707593, 28.1122679),
+(937, 'ZA', 'Mpumalanga', -25.565336, 30.5279096),
+(938, 'ZA', 'Eastern Cape', -32.2968402, 26.419389),
+(939, 'ZA', 'Western Cape', -33.2277918, 21.8568586);
+
+
+--
 -- Table structure for table `cities_areas`
 --
 
@@ -251,7 +267,336 @@ CREATE TABLE IF NOT EXISTS `cities_areas` (
   KEY `cities_active_index` (`active`)
 ) ENGINE=InnoDB AUTO_INCREMENT=474 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+
 -- --------------------------------------------------------
+
+--
+-- Dumping data for table `cities_areas` Nothern Cape
+--
+
+INSERT INTO `cities_areas` (`country_code`, `city_id`, `name`, `slug`, `longitude`, `latitude`, `time_zone`, `active`, `created_at`, `updated_at`) VALUES
+('ZA', 931, 'Kimberley', 'kimberley', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Upington', 'upington', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Springbok', 'springbok', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'De Aar', 'de-aar', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Kuruman', 'kuruman', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Postmasburg', 'postmasburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Colesberg', 'colesberg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Kakamas', 'kakamas', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Kathu', 'kathu', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Douglas', 'douglas', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Hopetown', 'hopetown', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Hartswater', 'hartswater', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Victoria West', 'victoria-west', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Port Nolloth', 'port-nolloth', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Prieska', 'prieska', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Richmond', 'richmond', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Sutherland', 'sutherland', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Calvinia', 'calvinia', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Carnavon', 'carnavon', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 931, 'Williston', 'williston', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11');
+
+--
+-- Dumping data for table `cities_areas` Freestate
+--
+
+INSERT INTO `cities_areas` (`country_code`, `city_id`, `name`, `slug`, `longitude`, `latitude`, `time_zone`, `active`, `created_at`, `updated_at`) VALUES
+('ZA', 932, 'Bloemfontein', 'bloemfontein', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Welkom', 'welkom', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Sasolburg', 'sasolburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Virginia', 'virginia', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Kroonstad', 'kroonstad', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Bethlehem', 'bethlehem', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Phuthaditjhaba', 'phuthaditjhaba', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Parys', 'parys', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Harrismith', 'harrismith', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Heilbron', 'heilbron', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Ladybrand', 'ladybrand', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Ficksburg', 'ficksburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'QwaQwa', 'qwaqwa', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Botshabelo', 'botshabelo', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Thaba Nchu', 'thaba-nchu', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Winburg', 'winburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Zastron', 'zastron', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Senekal', 'senekal', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Clocolan', 'clocolan', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 932, 'Brandfort', 'brandfort', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11');
+
+--
+-- Dumping data for table `cities_areas` Limpopo
+--
+
+INSERT INTO `cities_areas` (`country_code`, `city_id`, `name`, `slug`, `longitude`, `latitude`, `time_zone`, `active`, `created_at`, `updated_at`) VALUES
+('ZA', 933, 'Polokwane', 'polokwane', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Thohoyandou', 'thohoyandou', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Tzaneen', 'tzaneen', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Phalaborwa', 'phalaborwa', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Musina', 'musina', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Giyani', 'giyani', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Mokopane', 'mokopane', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Bela-Bela', 'bela-bela', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Lephalale', 'lephalale', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Modimolle', 'modimolle', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Makhado', 'makhado', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Louis Trichardt', 'louis-trichardt', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Seshego', 'seshego', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Jane Furse', 'jane-furse', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Burgersfort', 'burgersfort', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Vuwani', 'vuwani', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Haenertsburg', 'haenertsburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Elim', 'elim', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Dendron', 'dendron', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 933, 'Alldays', 'alldays', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11');
+
+--
+-- Dumping data for table `cities_areas` Noth West
+--
+
+INSERT INTO `cities_areas` (`country_code`, `city_id`, `name`, `slug`, `longitude`, `latitude`, `time_zone`, `active`, `created_at`, `updated_at`) VALUES
+('ZA', 934, 'Mahikeng', 'mahikeng', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Rustenburg', 'rustenburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Klerksdorp', 'klerksdorp', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Potchefstroom', 'potchefstroom', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Brits', 'brits', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Lichtenburg', 'lichtenburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Vryburg', 'vryburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Zeerust', 'zeerust', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Orkney', 'orkney', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Stilfontein', 'stilfontein', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Ventersdorp', 'ventersdorp', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Schweizer-Reneke', 'schweizer-reneke', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Delareyville', 'delareyville', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Wolmaransstad', 'wolmaransstad', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Hartbeespoort', 'hartbeespoort', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Mmabatho', 'mmabatho', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Mogwase', 'mogwase', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Taung', 'taung', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Bloemhof', 'bloemhof', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 934, 'Coligny', 'coligny', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11');
+
+--
+-- Dumping data for table `cities_areas` KZN
+--
+
+INSERT INTO `cities_areas` (`country_code`, `city_id`, `name`, `slug`, `longitude`, `latitude`, `time_zone`, `active`, `created_at`, `updated_at`) VALUES
+('ZA', 935, 'Durban', 'durban', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Pietermaritzburg', 'pietermaritzburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Umlazi', 'umlazi', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Chatsworth', 'chatsworth', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Phoenix', 'phoenix', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'KwaMashu', 'kwamashu', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Newcastle', 'newcastle', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Ladysmith', 'ladysmith', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Richards Bay', 'richards-bay', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Empangeni', 'empangeni', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Port Shepstone', 'port-shepstone', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Margate', 'margate', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Scottburgh', 'scottburgh', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Howick', 'howick', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Estcourt', 'estcourt', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Vryheid', 'vryheid', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Stanger', 'stanger', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Mtubatuba', 'mtubatuba', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Hluhluwe', 'hluhluwe', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Eshowe', 'eshowe', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Greytown', 'greytown', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Dundee', 'dundee', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Ixopo', 'ixopo', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Ballito', 'ballito', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Tongaat', 'tongaat', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Verulam', 'verulam', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Umhlanga', 'umhlanga', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Hibberdene', 'hibberdene', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Shelly Beach', 'shelly-beach', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Melmoth', 'melmoth', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Nkandla', 'nkandla', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Babanango', 'babanango', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Ulundi', 'ulundi', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Nongoma', 'nongoma', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Pinetown', 'pinetown', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Hillcrest', 'hillcrest', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Kloof', 'kloof', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 935, 'Amanzimtoti', 'amanzimtoti', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11');
+
+--
+-- Dumping data for table `cities_areas` Mpumalanga
+-- 
+INSERT INTO `cities_areas` (`country_code`, `city_id`, `name`, `slug`, `longitude`, `latitude`, `time_zone`, `active`, `created_at`, `updated_at`) VALUES
+('ZA', 937, 'Mbombela', 'mbombela', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'White River', 'white-river', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Sabie', 'sabie', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Graskop', 'graskop', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Hazyview', 'hazyview', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Barberton', 'barberton', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Lydenburg', 'lydenburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Delmas', 'delmas', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Secunda', 'secunda', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Trichardt', 'trichardt', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Bethal', 'bethal', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Ermelo', 'ermelo', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Volksrust', 'volksrust', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Amersfoort', 'amersfoort', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Carolina', 'carolina', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Machadodorp', 'machadodorp', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Waterval Boven', 'waterval-boven', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Middelburg', 'middelburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Hendrina', 'hendrina', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'eMalahleni', 'emalahleni', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'KwaMhlanga', 'kwamhlanga', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Siyabuswa', 'siyabuswa', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Bushbuckridge', 'bushbuckridge', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Komatipoort', 'komatipoort', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Malelane', 'malelane', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Skukuza', 'skukuza', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Acornhoek', 'acornhoek', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Dwarsloop', 'dwarsloop', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 937, 'Pilgrim''s Rest', 'pilgrims-rest', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11');
+
+--
+-- Dumping data for table `cities_areas` Western Cape
+--
+
+INSERT INTO `cities_areas` (`country_code`, `city_id`, `name`, `slug`, `longitude`, `latitude`, `time_zone`, `active`, `created_at`, `updated_at`) VALUES
+('ZA', 938, 'Adelaide', 'adelaide', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Alice', 'alice', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Aliwal North', 'aliwal-north', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Barkly East', 'barkly-east', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Berlin', 'berlin', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Bhisho', 'bhisho', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Burgersdorp', 'burgersdorp', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Cala', 'cala', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Cathcart', 'cathcart', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Cofimvaba', 'cofimvaba', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Dordrecht', 'dordrecht', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'East London', 'east-london', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Elliot', 'elliot', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Engcobo', 'engcobo', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Fort Beaufort', 'fort-beaufort', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Gonubie', 'gonubie', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Hogsback', 'hogsback', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Hofmeyr', 'hofmeyr', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Indwe', 'indwe', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Jamestown', 'jamestown', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Katberg', 'katberg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Keiskammahoek', 'keiskammahoek', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'King William's Town', 'king-william-s-town', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Komga', 'komga', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Lady Frere', 'lady-frere', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Maclear', 'maclear', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Mdantsane', 'mdantsane', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Molteno', 'molteno', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Peddie', 'peddie', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Queenstown', 'queenstown', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Seymour', 'seymour', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Sterkspruit', 'sterkspruit', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Sterkstroom', 'sterkstroom', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Stutterheim', 'stutterheim', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Tarkastad', 'tarkastad', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Tsomo', 'tsomo', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Venterstad', 'venterstad', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Whittlesea', 'whittlesea', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Zwelitsha', 'zwelitsha', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Aberdeen', 'aberdeen', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Addo', 'addo', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Alexandria', 'alexandria', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Bathurst', 'bathurst', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Bedford', 'bedford', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Cookhouse', 'cookhouse', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Cradock', 'cradock', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Despatch', 'despatch', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Enon', 'enon', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Gqeberha (Port Elizabeth)', 'gqeberha-port-elizabeth', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Graaff-Reinet', 'graaff-reinet', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Grahamstown (Makhanda)', 'grahamstown-makhanda', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Hankey', 'hankey', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Humansdorp', 'humansdorp', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Jeffreys Bay', 'jeffreys-bay', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Joubertina', 'joubertina', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Kareedouw', 'kareedouw', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Kenton-on-Sea', 'kenton-on-sea', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Kirkwood', 'kirkwood', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Middelburg', 'middelburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Nieu-Bethesda', 'nieu-bethesda', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Patensie', 'patensie', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Paterson', 'paterson', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Port Alfred', 'port-alfred', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Salem', 'salem', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Somerset East', 'somerset-east', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'St Francis Bay', 'st-francis-bay', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Steynsburg', 'steynsburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Steytlerville', 'steytlerville', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Uitenhage (Kariega)', 'uitenhage-kariega', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Willowmore', 'willowmore', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Bizana', 'bizana', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Butterworth', 'butterworth', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Centane', 'centane', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Chintsa', 'chintsa', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Coffee Bay', 'coffee-bay', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Elliotdale', 'elliotdale', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Flagstaff', 'flagstaff', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Idutywa', 'idutywa', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Libode', 'libode', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Lusikisiki', 'lusikisiki', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Matatiele', 'matatiele', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Mount Ayliff', 'mount-ayliff', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Mount Fletcher', 'mount-fletcher', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Mount Frere', 'mount-frere', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Ngqeleni', 'ngqeleni', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Nqamakwe', 'nqamakwe', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Port St Johns', 'port-st-johns', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Qolora Mouth', 'qolora-mouth', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Qumbu', 'qumbu', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Tabankulu', 'tabankulu', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Tsolo', 'tsolo', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Umtata (Mthatha)', 'umtata-mthatha', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24'),
+('ZA', 938, 'Willowvale', 'willowvale', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-21 06:38:24', '2025-04-21 06:38:24');
+
+--
+-- Dumping data for table `cities_areas` Western Cape
+--
+
+INSERT INTO `cities_areas` (`country_code`, `city_id`, `name`, `slug`, `longitude`, `latitude`, `time_zone`, `active`, `created_at`, `updated_at`) VALUES
+('ZA', 939, 'Cape Town', 'cape-town', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Bellville', 'bellville', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Durbanville', 'durbanville', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Goodwood', 'goodwood', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Parow', 'parow', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Brackenfell', 'brackenfell', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Kraaifontein', 'kraaifontein', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Kuils River', 'kuils-river', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Mitchells Plain', 'mitchells-plain', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Khayelitsha', 'khayelitsha', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Atlantis', 'atlantis', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Somerset West', 'somerset-west', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Strand', 'strand', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Gordons Bay', 'gordons-bay', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Stellenbosch', 'stellenbosch', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Paarl', 'paarl', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Worcester', 'worcester', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'George', 'george', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Knysna', 'knysna', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Mossel Bay', 'mossel-bay', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Oudtshoorn', 'oudtshoorn', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Beaufort West', 'beaufort-west', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Vredenburg', 'vredenburg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Saldanha', 'saldanha', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Malmesbury', 'malmesbury', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Ceres', 'ceres', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Grabouw', 'grabouw', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Robertson', 'robertson', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Caledon', 'caledon', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Swellendam', 'swellendam', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Bredasdorp', 'bredasdorp', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Hermanus', 'hermanus', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Clanwilliam', 'clanwilliam', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Piketberg', 'piketberg', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Langebaan', 'langebaan', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Franschhoek', 'franschhoek', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Ladismith', 'ladismith', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Montagu', 'montagu', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Tulbagh', 'tulbagh', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11'),
+('ZA', 939, 'Wellington', 'wellington', 26.42, -32.3, 'Africa/Harare', 1, '2025-04-16 20:05:11', '2025-04-16 20:05:11');
+
 
 --
 -- Table structure for table `cities_backup`
@@ -6740,6 +7085,18 @@ CREATE TABLE IF NOT EXISTS `threads` (
   `deleted_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Table structure for table `timezones`
+--
+
+CREATE TABLE IF NOT EXISTS `timezones` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `timezone` VARCHAR(255) NOT NULL,
+    `timezone_location` VARCHAR(255) NOT NULL,
+    `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
 
 --
 -- Dumping data for table `timezones`
